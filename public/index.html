@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+		<title>INM320 bootstrap</title>
+      <!--Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <!--CSS STYLESHEET-->
+      <link rel="stylesheet" href="assets/css/style.css"/>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/577fe6c0f3.js" crossorigin="anonymous"></script>
+
+
+	</head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-dark" id="sidebar-wrapper">
+          <div class="d-flex sidebar-heading text-center py-4 align-items-center">
+            <img src=assets/images/logo.png alt="logo">
+            <span class="align-baseline">Dashboard Kit</span>
+          </div>
+          <div class="list-group list-group-flush my-3">
+              <a href="#" class="list-group-item list-group-item-action bg-transparent active">
+                <em class="fa-solid fa-fw fa-chart-pie mr-15"></em>
+              Overview
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-ticket mr-15"></em>
+              Tickets
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-lightbulb mr-15"></em>
+                Ideas
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-address-book mr-15"></em>
+              Contacts
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-user-tie mr-15"></em>
+              Agents
+              </a>
+              
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-book mr-15"></em>
+              Articles
+              </a>
+
+              <hr>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-gear mr-15"></em>
+              Settings
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                <em class="fa-solid fa-fw fa-award mr-15"></em>
+              Subscription
+              </a>
+              
+          </div>
+      </div>
+
+
+      <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+              <div class="d-flex align-items-center">
+                
+                <h1 class="m-0">Overview</h1>
+              </div>
+
+
+              <!-- burger menu -->
+
+              
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  align-baseline" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="profile-pic" src="assets/images/avatar.png" alt="profile picture" height="25" width="25">
+                          Kitten
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+              </div>
+          </nav>
+
+          
+
+          <div class="container-fluid upper-cards">
+
+            <!-- upper 4 cards -->
+
+            <div class="row g-3">
+              <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-center text-center align-items-center rounded">
+                    <div>
+                        <h3>Unresolved</h3>
+                        <p>60</p>
+                    </div>
+                    
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-center text-center align-items-center rounded">
+                    <div>
+                        <h3>Overdue</h3>
+                        <p>16</p>
+                    </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-center text-center align-items-center rounded">
+                    <div>
+                        <h3>Open</h3>
+                        <p>43</p>
+                    </div>
+                    
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-center text-center align-items-center rounded">
+                    <div>
+                        <h3>On hold</h3>
+                        <p>64</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+            <!-- middle -->
+
+          <div class="container-fluid px-4">
+
+            <div class="row align-item-center my-4">
+
+              <!-- graph -->
+
+              <div class="col-12 col-lg-8 bg-white rounded shadow-sm">
+                <div class="col-12 col-md-auto me-auto mb-4 mb-md-0">
+                  <h2 class="mb-0">Today's trends</h>
+            
+                </div>
+
+                <span class="small date">as of 20 Mar 2023</span>
+
+                <div class="col-12 col-md-auto text-secondary">
+                  <div class="d-inline-flex me-6 align-items-center">
+                    <span class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                      </svg>
+                    </span>
+                    <span class="small">Today</span>
+                    
+                  </div>
+
+
+                  <div class="d-inline-flex me-6 align-items-center">
+                    <span class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                      </svg>
+                    </span>
+                    <span class="small">Yesterday</span>
+                  </div>
+                </div>
+      
+                <div class="chart py-3">
+                  <img class="img-fluid px-5 d-block" src="assets/images/graph.png" alt="graph">
+      
+                </div>
+              </div>
+
+              <!-- 5 cards on the right -->
+
+              <div class="col-12 col-lg-4 bg-white rounded shadow-sm d-grid">
+                <div class="row row-gap-3 row-cols-1">
+                  <div class="col bg-white p-3 rounded shadow-sm card-item justify-content-center text-center align-items-center">
+                    <span class="card-title">Resolved</span>
+                    <p class="card-text">449</p>
+                  </div>
+
+                  <div class="col bg-white p-3 rounded shadow-sm card-item justify-content-center text-center align-items-center">
+                    <span class="card-title">Received</span>
+                    <p class="card-text">426</p>
+                  </div>
+
+                  <div class="col bg-white p-3 rounded shadow-sm card-item justify-content-center text-center align-items-center">
+                    <span class="card-title">Average first response time</span>
+                    <p class="card-text">33m</p>
+
+                  </div>
+
+                  <div class="col bg-white p-3 rounded shadow-sm card-item justify-content-center text-center align-items-center">
+                    <span class="card-title">Average response time</span>
+                    <p class="card-text">3h 8m</p>
+
+                  </div>
+
+                  <div class="col bg-white p-3 rounded card-item justify-content-center text-center align-items-center">
+                    <span class="card-title">Resolution within SLA</span>
+                    <p class="card-text">94%</p>
+
+                  </div>
+
+                </div>
+      
+              </div>
+            </div>
+          </div>
+            
+           <!-- end -->
+          
+          <div class="container-fluid px-4">
+
+            <div class="row align-item-center mb-4">
+
+
+              <!-- table 1 -->
+
+              <div class="col-12 col-lg-6 bg-white rounded shadow-sm mb-3">
+
+                <div class="col-12 col-md-auto me-auto mb-4 mb-md-0">
+
+                  <a class="list-group-item d-flex gap-3 py-3">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+        
+                        <p class="mb-0 table-title">Unresolved tickets</p>
+                      </div>
+
+                      <small class="text-nowrap">View details</small>
+                      
+                    </div>
+                  </a>
+            
+                </div>
+
+                <div class="list-group w-auto">
+                  <a href="#" class="list-group-item d-flex" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+        
+                        <p class="mb-0">Waiting on Feature Request</p>
+                      </div>
+                      <small class="text-nowrap">4238</small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        
+                        <p class="mb-0">Awaiting Customer Response</p>
+                      </div>
+                      <small class="text-nowrap">1005</small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        
+                        <p class="mb-0">Awaiting Developer Fix</p>
+                      </div>
+                      <small class="text-nowrap">914</small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        
+                        <p class="mb-0">Pending</p>
+                      </div>
+                      <small class="text-nowrap">291</small>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- table 2 -->
+
+              <div class="col-12 col-lg-6 bg-white rounded shadow-sm mb-3">
+
+                
+                <div class="col-12 col-md-auto me-auto mb-4 mb-md-0">
+
+                  <a class="list-group-item d-flex gap-3 py-3">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+        
+                        <p class="mb-0 table-title">Tasks</p>
+                      </div>
+
+                      <small class="text-nowrap">View details</small>
+                      
+                    </div>
+                  </a>
+            
+                </div>
+
+                <div class="list-group w-auto">
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <span>
+                          <input class="mb-0 border-0" placeholder="Create new task here">
+                          
+                        </span>
+            
+                      </div>
+                      <small class="text-nowrap">
+                        <i class="fa-solid fa-plus"></i>
+                      </small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+
+                      <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Finish ticket update
+                        </label>
+                      </div>
+                      <small class="text-nowrap">
+                        <span class="badge text-center text-bg-warning">URGENT</span>
+                      </small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+
+                        
+                      <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Create new ticket example
+                        </label>
+                      </div>
+
+                      <small class="text-nowrap">
+                        <span class="badge text-center text-nowrap text-bg-warning">URGENT</span>
+                      </small>
+                    </div>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Update ticket report
+                        </label>
+                      </div>
+                      <small class="text-nowrap">
+                        <span class="badge rounded-pill text-bg-light">DEFAULT</span>
+                      </small>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+             
+
+          </div>
+
+ 
+            
+                
+    
+
+            <!-- </div>
+                  <div class="col-12 col-lg-6 mb-6 mb-lg-0">
+                    <h3 class="fs-4 mb-3">Tasks</h3>
+                    <div class="py-6 px-6 d-flex align-items-center justify-content-between bg-light-light">
+                      <div>
+                        <span class="d-block mb-2 text-secondary small">Today</span>
+                      
+                      </div>
+                      <a class="text-decoration-none" href="#">View all</a>
+                    </div>
+
+                    <table class="table bg-white rounded shadow-sm table-hover">
+                        
+                          <tbody>
+
+                            <tr>
+                                
+                                <td>
+                                  <input class="border-0" placeholder="Create new task here">
+                                </td>
+                                <td class="align-end">
+                                  <i class="fa-solid fa-plus"></i>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Finish ticket update
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="align-end">
+                                  <span class="badge text-center text-bg-warning">URGENT</span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Create new ticket example
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="align-end">
+                                  <span class="badge text-center text-bg-success">NEW</span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Update ticket report
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="align-end">
+                                  <span class="badge rounded-pill text-bg-light">DEFAULT</span>
+                                </td>
+                                
+                            </tr>
+                            
+                              
+                          </tbody>
+                    </table>
+            </div> -->
+
+                  
+
+              
+
+          
+      </div>
+      
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

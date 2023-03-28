@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.list-group-item {
+    color:#A4A6B3;
+    border: none;
+    padding: 20px 30px;
+    font-size: 15px;
+}
+
+#sidebar-wrapper .list-group .list-group-item :focus,
+#sidebar-wrapper .list-group .list-group-item:hover {
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+}
+
+
+.align-baseline {
+   color: #A4A6B3;
+   margin-left:5px;
+   font-size: 18px;
+
+}
+
+.g-3 .col-md-3:focus,
+.g-3 .col-md-3:hover {
+    color: #3751FF;
+    font-weight: bold;
+    border-color:#3751FF;
+    border-width: 1px;
+}
+
+
+.g-3 .col-md-3 p {
+    font-size: 28px;
+    font-weight:bold;
+}
+
+
+h1 {
+    font-size: 18px;
+    font-weight:bold;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight:bold;
+    padding:25px 0 0 15px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container .row .date {
+    margin-left:15px;
+}
+
+.card-title {
+    font-size: 15px;
+    color:#9FA2B4;
+
+}
+
+.card-text {
+    font-size: 22px;
+    font-weight:bold;
+}
+
+
+.align-end {
+    text-align: end;
+}
+
+.table-title {
+    font-size:15px;
+    color:black;
+    font-weight: bold;
+}
+
+.container-fluid .row .col-12 .list-group-item{
+    color:black;
+}
+
+.container-fluid .row .col-12 .list-group-item:focus,
+.container-fluid .row .col-12 .list-group-item:hover {
+    color: #3751FF;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-color: #F7F8FC;
+}
+
+hr {
+    border-color:#A4A6B3
+}
+
+.profile-pic {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+.rounded-full {
+border-radius: 100%;
+}
+
+
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+
+.list-group-item.active {
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+}
+
+@media (min-width: 650px) {
+
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+
+    
+
+    
+
+
+
+   
+
+
+}
+
+
